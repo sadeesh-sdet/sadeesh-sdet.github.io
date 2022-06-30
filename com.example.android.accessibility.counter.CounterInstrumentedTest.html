@@ -1,0 +1,117 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Test results - Class com.example.android.accessibility.counter.CounterInstrumentedTest</title>
+<link href="css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<script src="js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.example.android.accessibility.counter.CounterInstrumentedTest</h1>
+<div class="breadcrumbs">
+<a href="index.html">all</a> &gt; 
+<a href="com.example.android.accessibility.counter.html">com.example.android.accessibility.counter</a> &gt; CounterInstrumentedTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">4.459s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="testIncrement"></a>
+<h3 class="failures">testIncrement</h3>
+<span class="code">
+<pre>com.google.android.apps.common.testing.accessibility.framework.integrations.espresso.AccessibilityViewCheckException: There were 5 accessibility results:
+AppCompatImageView{id=2131230787, res-name=add_button, visibility=VISIBLE, width=24, height=24, has-focus=true, has-focusable=true, has-window-focus=false, is-clickable=true, is-enabled=true, is-focused=true, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=263.0, y=505.0}: This item's size is 24dp x 24dp. Consider making this touch target 48dp wide and 48dp high or larger. Reported by com.google.android.apps.common.testing.accessibility.framework.checks.TouchTargetSizeCheck,
+AppCompatImageView{id=2131230991, res-name=subtract_button, visibility=VISIBLE, width=24, height=24, has-focus=false, has-focusable=true, has-window-focus=false, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=30.0, y=505.0}: This item's size is 24dp x 24dp. Consider making this touch target 48dp wide and 48dp high or larger. Reported by com.google.android.apps.common.testing.accessibility.framework.checks.TouchTargetSizeCheck,
+AppCompatTextView{id=2131230833, res-name=countTV, visibility=VISIBLE, width=56, height=113, has-focus=false, has-focusable=false, has-window-focus=false, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=132.0, y=269.0, text=0, input-type=0, ime-target=false, has-links=false}: The item's text contrast ratio is 2.46. This ratio is based on a text color of #999999 and background color of #EEEEEE. Consider increasing this item's text contrast ratio to 3.00 or greater. Reported by com.google.android.apps.common.testing.accessibility.framework.checks.TextContrastCheck,
+AppCompatImageView{id=2131230787, res-name=add_button, visibility=VISIBLE, width=24, height=24, has-focus=true, has-focusable=true, has-window-focus=false, is-clickable=true, is-enabled=true, is-focused=true, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=263.0, y=505.0}: This item may not have a label readable by screen readers. Reported by com.google.android.apps.common.testing.accessibility.framework.checks.SpeakableTextPresentCheck,
+AppCompatImageView{id=2131230991, res-name=subtract_button, visibility=VISIBLE, width=24, height=24, has-focus=false, has-focusable=true, has-window-focus=false, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=30.0, y=505.0}: This item may not have a label readable by screen readers. Reported by com.google.android.apps.common.testing.accessibility.framework.checks.SpeakableTextPresentCheck
+at com.google.android.apps.common.testing.accessibility.framework.integrations.espresso.AccessibilityValidator.processResults(AccessibilityValidator.java:272)
+at com.google.android.apps.common.testing.accessibility.framework.integrations.espresso.AccessibilityValidator.runAccessibilityChecks(AccessibilityValidator.java:228)
+at com.google.android.apps.common.testing.accessibility.framework.integrations.espresso.AccessibilityValidator.checkAndReturnResults(AccessibilityValidator.java:87)
+at androidx.test.espresso.accessibility.AccessibilityChecks$2.check(AccessibilityChecks.java:65)
+at androidx.test.espresso.action.ViewActions$1.perform(ViewActions.java:3)
+at androidx.test.espresso.ViewInteraction$SingleExecutionViewAction.perform(ViewInteraction.java:2)
+at androidx.test.espresso.ViewInteraction.doPerform(ViewInteraction.java:25)
+at androidx.test.espresso.ViewInteraction.-$$Nest$mdoPerform(Unknown Source:0)
+at androidx.test.espresso.ViewInteraction$1.call(ViewInteraction.java:5)
+at androidx.test.espresso.ViewInteraction$1.call(ViewInteraction.java:1)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at android.os.Handler.handleCallback(Handler.java:883)
+at android.os.Handler.dispatchMessage(Handler.java:100)
+at android.os.Looper.loop(Looper.java:214)
+at android.app.ActivityThread.main(ActivityThread.java:7356)
+at java.lang.reflect.Method.invoke(Native Method)
+at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:492)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:930)</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>test(AVD) - 10</th>
+</tr>
+</thead>
+<tr>
+<td>testIncrement</td>
+<td class="failures">failed (4.459s)</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="footer">
+<p>Generated by 
+<a href="http://www.gradle.org">Gradle 7.2</a> at May 24, 2022, 6:46:20 AM</p>
+</div>
+</div>
+</body>
